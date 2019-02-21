@@ -168,17 +168,23 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
 .navi {
   width: 100%;
   border-bottom: 2px dashed silver;
 }
 nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   height: 90px;
-  width: 790px;
-  margin: 0 auto;
+  width: 800px;
+  margin: auto;
 }
 @media (max-width: 500px) {
   nav {
@@ -305,13 +311,16 @@ nav h1 {
 }
 .home .btn {
   width: 60%;
-  height: 35px;
+  height: 30px;
   background: #17A2B8;
   color: white;
   border-radius: 10%;
   text-align: center;
   padding: 1rem;
   font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
 }
 @media (max-width: 500px) {
   .home .btn {
