@@ -1,14 +1,33 @@
 // Navigation Styles here
+
+.navi {
+    width: 100%;
+    border-bottom: 2px dashed silver;
+}
+
 nav {
-    .flex(space-between, center);
-    border-bottom: 2px dashed lightgray ;
-    a {
+    .flex(space-around, center);
+    height: 90px;
+    width: 790px;
+    margin: 0 auto;
+    @media @mobile {
+        width: 400px;
+        flex-direction: column;
+    }
+
+    .links a {
         text-decoration: none;
-        color: black;
+        color: @shark;
+        padding: 2rem;
         font-size: 1.6rem;
-    
+        @media @mobile {
+        }
+    }
     h1 {
         padding-right: 30%;
-    }
-}
+        @media @mobile {
+            display: block;
+            padding-right: 0%;
+        }
+    }   
 }

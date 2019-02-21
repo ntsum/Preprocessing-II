@@ -168,19 +168,38 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navi {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+}
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  border-bottom: 2px dashed lightgray ;
+  height: 90px;
+  width: 790px;
+  margin: 0 auto;
 }
-nav a {
+@media (max-width: 500px) {
+  nav {
+    width: 400px;
+    flex-direction: column;
+  }
+}
+nav .links a {
   text-decoration: none;
-  color: black;
+  color: #212529;
+  padding: 2rem;
   font-size: 1.6rem;
 }
-nav a h1 {
+nav h1 {
   padding-right: 30%;
+}
+@media (max-width: 500px) {
+  nav h1 {
+    display: block;
+    padding-right: 0%;
+  }
 }
 .footer {
   width: 100%;
@@ -199,13 +218,31 @@ nav a h1 {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -226,6 +263,11 @@ nav a h1 {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -235,7 +277,44 @@ nav a h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 90%;
+  }
+}
+.home .top-content {
+  border-bottom: 2px dashed #C0C0C0;
+}
+.home .top-content h2 {
+  padding: 15px 0;
+}
+.home .top-content p {
+  padding-bottom: 30px;
+}
+.home .btn {
+  width: 60%;
+  height: 35px;
+  background: #17A2B8;
+  color: white;
+  border-radius: 10%;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .home .btn {
+    width: 90%;
+  }
 }
